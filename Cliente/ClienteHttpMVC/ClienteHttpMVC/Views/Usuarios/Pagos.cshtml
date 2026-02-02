@@ -1,0 +1,165 @@
+﻿@using ClienteHttpMVC.DTOs
+@model IEnumerable<PagoDTO>
+
+@{
+    ViewData["Title"] = "Pagos de un usuario";
+
+    var listaUsuarios = ViewBag.Usuarios as List<UsuarioDTO>;
+    var pagosUnicos = new List<PagoDTO>();
+    var pagosRecurrentes = new List<PagoDTO>();
+
+    if (Model != null)
+    {
+        foreach (var p in Model)
+        {
+            if (p.Fecha.HasValue)
+            {
+                pagosUnicos.Add(p);
+            }
+            else if (p.FechaInicio.HasValue || p.FechaFin.HasValue)
+            {
+                pagosRecurrentes.Add(p);
+            }
+        }
+    }
+}
+
+<h1>Pagos de un usuario</h1>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+
+@if (ViewBag.ErrorUsuarios != null)
+{
+    <div class="alert alert-warning">Error cargando usuarios: @ViewBag.ErrorUsuarios</div>
+}
+
+<form asp-action="Pagos" method="get" class="mb-3">
+    <div class="input-group">
+        <span class="input-group-text">Usuario</span>
+        <select name="idUsuario" class="form-select">
+            <option value="0">-- Seleccione un usuario --</option>
+            @if (listaUsuarios != null)
+            {
+                foreach (UsuarioDTO u in listaUsuarios)
+                {
+                    bool seleccionado = false;
+                    if (ViewBag.IdUsuario != null && (int)ViewBag.IdUsuario == u.Id)
+                    {
+                        seleccionado = true;
+                    }
+
+                    if (seleccionado)
+                    {
+                        <option value="@u.Id" selected>@u.Nombre @u.Apellido (@u.Mail)</option>
+                    }
+                    else
+                    {
+                        <option value="@u.Id">@u.Nombre @u.Apellido (@u.Mail)</option>
+                    }
+                }
+            }
+        </select>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+    </div>
+</form>
+
+@if (Model == null || !Model.Any())
+{
+    <p>No hay pagos para mostrar.</p>
+}
+else
+{
+    <!-- PAGOS ÚNICOS -->
+    <h2 class="mt-3">Pagos únicos</h2>
+
+    @if (pagosUnicos.Count == 0)
+    {
+        <p>No hay pagos únicos para este usuario.</p>
+    }
+    else
+    {
+        <table class="table table-striped mt-2">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Descripción</th>
+                    <th>Monto</th>
+                    <th>Saldo pendiente</th>
+                    <th>Método</th>
+                    <th>Fecha</th>
+                    <th>Nro. Recibo</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var p in pagosUnicos)
+                {
+                    <tr>
+                        <td>@p.Id</td>
+                        <td>@p.Descripcion</td>
+                        <td>@p.Monto</td>
+                        <td>@p.SaldoPendiente</td>
+                        <td>@p.MetodoPago</td>
+                        <td>
+                            @if (p.Fecha.HasValue)
+                            {
+                                @p.Fecha.Value.ToShortDateString()
+                            }
+                        </td>
+                        <td>@p.NroRecibo</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+    <!-- PAGOS RECURRENTES -->
+    <h2 class="mt-4">Pagos recurrentes</h2>
+
+    @if (pagosRecurrentes.Count == 0)
+    {
+        <p>No hay pagos recurrentes para este usuario.</p>
+    }
+    else
+    {
+        <table class="table table-striped mt-2">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Descripción</th>
+                    <th>Monto</th>
+                    <th>Saldo pendiente</th>
+                    <th>Método</th>
+                    <th>Fecha inicio</th>
+                    <th>Fecha fin</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var p in pagosRecurrentes)
+                {
+                    <tr>
+                        <td>@p.Id</td>
+                        <td>@p.Descripcion</td>
+                        <td>@p.Monto</td>
+                        <td>@p.SaldoPendiente</td>
+                        <td>@p.MetodoPago</td>
+                        <td>
+                            @if (p.FechaInicio.HasValue)
+                            {
+                                @p.FechaInicio.Value.ToShortDateString()
+                            }
+                        </td>
+                        <td>
+                            @if (p.FechaFin.HasValue)
+                            {
+                                @p.FechaFin.Value.ToShortDateString()
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}

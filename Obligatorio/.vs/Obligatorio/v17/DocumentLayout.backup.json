@@ -1,0 +1,136 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\andre\\OneDrive\\Desktop\\facultad\\3er semestre\\p3\\ObligatorioP3-AndresLasala-346108\\Obligatorio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AC68B51C-0B63-4747-B4DA-D9E6B0CDC232}|LogicaNegocio\\LogicaNegocio.csproj|c:\\users\\andre\\onedrive\\desktop\\facultad\\3er semestre\\p3\\obligatoriop3-andreslasala-346108\\obligatorio\\logicanegocio\\valueobjects\\mailvo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC68B51C-0B63-4747-B4DA-D9E6B0CDC232}|LogicaNegocio\\LogicaNegocio.csproj|solutionrelative:logicanegocio\\valueobjects\\mailvo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DBC573A-73C1-4C34-B8E2-26E9BAAE8224}|LogicaAccesoDatos\\LogicaAccesoDatos.csproj|c:\\users\\andre\\onedrive\\desktop\\facultad\\3er semestre\\p3\\obligatoriop3-andreslasala-346108\\obligatorio\\logicaaccesodatos\\repositorios\\repositoriopagosbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DBC573A-73C1-4C34-B8E2-26E9BAAE8224}|LogicaAccesoDatos\\LogicaAccesoDatos.csproj|solutionrelative:logicaaccesodatos\\repositorios\\repositoriopagosbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE9B7812-316A-4808-B1A6-B26214E943F5}|WebAPI\\WebAPI.csproj|c:\\users\\andre\\onedrive\\desktop\\facultad\\3er semestre\\p3\\obligatoriop3-andreslasala-346108\\obligatorio\\webapi\\controllers\\equiposcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE9B7812-316A-4808-B1A6-B26214E943F5}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\equiposcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE9B7812-316A-4808-B1A6-B26214E943F5}|WebAPI\\WebAPI.csproj|c:\\users\\andre\\onedrive\\desktop\\facultad\\3er semestre\\p3\\obligatoriop3-andreslasala-346108\\obligatorio\\webapi\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE9B7812-316A-4808-B1A6-B26214E943F5}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE9B7812-316A-4808-B1A6-B26214E943F5}|WebAPI\\WebAPI.csproj|c:\\users\\andre\\onedrive\\desktop\\facultad\\3er semestre\\p3\\obligatoriop3-andreslasala-346108\\obligatorio\\webapi\\controllers\\auditoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE9B7812-316A-4808-B1A6-B26214E943F5}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\auditoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE9B7812-316A-4808-B1A6-B26214E943F5}|WebAPI\\WebAPI.csproj|c:\\users\\andre\\onedrive\\desktop\\facultad\\3er semestre\\p3\\obligatoriop3-andreslasala-346108\\obligatorio\\webapi\\controllers\\pagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE9B7812-316A-4808-B1A6-B26214E943F5}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\pagoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE9B7812-316A-4808-B1A6-B26214E943F5}|WebAPI\\WebAPI.csproj|c:\\users\\andre\\onedrive\\desktop\\facultad\\3er semestre\\p3\\obligatoriop3-andreslasala-346108\\obligatorio\\webapi\\controllers\\gastoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE9B7812-316A-4808-B1A6-B26214E943F5}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\gastoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MailVO.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Desktop\\facultad\\3er semestre\\p3\\ObligatorioP3-AndresLasala-346108\\Obligatorio\\LogicaNegocio\\ValueObjects\\MailVO.cs",
+              "RelativeDocumentMoniker": "LogicaNegocio\\ValueObjects\\MailVO.cs",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Desktop\\facultad\\3er semestre\\p3\\ObligatorioP3-AndresLasala-346108\\Obligatorio\\LogicaNegocio\\ValueObjects\\MailVO.cs",
+              "RelativeToolTip": "LogicaNegocio\\ValueObjects\\MailVO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwA8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:58:17.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RepositorioPagosBD.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Desktop\\facultad\\3er semestre\\p3\\ObligatorioP3-AndresLasala-346108\\Obligatorio\\LogicaAccesoDatos\\Repositorios\\RepositorioPagosBD.cs",
+              "RelativeDocumentMoniker": "LogicaAccesoDatos\\Repositorios\\RepositorioPagosBD.cs",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Desktop\\facultad\\3er semestre\\p3\\ObligatorioP3-AndresLasala-346108\\Obligatorio\\LogicaAccesoDatos\\Repositorios\\RepositorioPagosBD.cs",
+              "RelativeToolTip": "LogicaAccesoDatos\\Repositorios\\RepositorioPagosBD.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAswG4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:57:49.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GastosController.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Desktop\\facultad\\3er semestre\\p3\\ObligatorioP3-AndresLasala-346108\\Obligatorio\\WebAPI\\Controllers\\GastosController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\GastosController.cs",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Desktop\\facultad\\3er semestre\\p3\\ObligatorioP3-AndresLasala-346108\\Obligatorio\\WebAPI\\Controllers\\GastosController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\GastosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T18:20:22.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Desktop\\facultad\\3er semestre\\p3\\ObligatorioP3-AndresLasala-346108\\Obligatorio\\WebAPI\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Desktop\\facultad\\3er semestre\\p3\\ObligatorioP3-AndresLasala-346108\\Obligatorio\\WebAPI\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowGsAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T18:20:19.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EquiposController.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Desktop\\facultad\\3er semestre\\p3\\ObligatorioP3-AndresLasala-346108\\Obligatorio\\WebAPI\\Controllers\\EquiposController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\EquiposController.cs",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Desktop\\facultad\\3er semestre\\p3\\ObligatorioP3-AndresLasala-346108\\Obligatorio\\WebAPI\\Controllers\\EquiposController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\EquiposController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T18:00:51.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuditoriasController.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Desktop\\facultad\\3er semestre\\p3\\ObligatorioP3-AndresLasala-346108\\Obligatorio\\WebAPI\\Controllers\\AuditoriasController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\AuditoriasController.cs",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Desktop\\facultad\\3er semestre\\p3\\ObligatorioP3-AndresLasala-346108\\Obligatorio\\WebAPI\\Controllers\\AuditoriasController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\AuditoriasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T18:00:36.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PagosController.cs",
+              "DocumentMoniker": "C:\\Users\\andre\\OneDrive\\Desktop\\facultad\\3er semestre\\p3\\ObligatorioP3-AndresLasala-346108\\Obligatorio\\WebAPI\\Controllers\\PagosController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\PagosController.cs",
+              "ToolTip": "C:\\Users\\andre\\OneDrive\\Desktop\\facultad\\3er semestre\\p3\\ObligatorioP3-AndresLasala-346108\\Obligatorio\\WebAPI\\Controllers\\PagosController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\PagosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T22:43:51.139Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

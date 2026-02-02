@@ -1,0 +1,45 @@
+﻿@using ClienteHttpMVC.DTOs
+@model IEnumerable<EquipoDTO>
+
+@{
+    ViewData["Title"] = "Equipos con pagos únicos mayores a un monto";
+}
+
+<h1>Equipos con pagos únicos</h1>
+
+<form asp-action="Index" method="get" class="mb-3">
+    <div class="input-group">
+        <label for="monto" class="input-group-text">Monto</label>
+        <input type="number" class="form-control" name="monto" value="@(ViewBag.Monto)" />
+        <button type="submit" class="btn btn-primary">Buscar</button>
+    </div>
+</form>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger mt-2">@ViewBag.Error</div>
+}
+else if (Model == null || !Model.Any())
+{
+    <p>No hay equipos para mostrar.</p>
+}
+else
+{
+    <table class="table table-striped mt-3">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Nombre</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

@@ -1,0 +1,24 @@
+﻿@using ClienteHttpMVC.DTOs
+@model UsuarioDTO
+
+<h1>Login</h1>
+
+@if (!string.IsNullOrWhiteSpace(ViewBag.Error as string))
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+
+<form method="post" asp-action="Login" asp-controller="Usuarios">
+
+    <div class="mb-3">
+        <label>Mail</label>
+        <input asp-for="Mail" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Contraseña</label>
+        <input asp-for="Pass" type="password" class="form-control" />
+    </div>
+
+    <button class="btn btn-primary">Ingresar</button>
+</form>

@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+@if (ViewBag.Mail != null)
+{
+    <div class="text-center">
+        <h1 class="display-4">Bienvenido @ViewBag.Mail</h1>
+    </div>
+}
+else
+{
+    <div class="text-center">
+        <h1 class="display-4">Bienvenido</h1>
+    </div>
+}

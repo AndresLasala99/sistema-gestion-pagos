@@ -1,0 +1,47 @@
+﻿@using ClienteHttpMVC.DTOs
+
+@{
+    ViewData["Title"] = "Resetear contraseña";
+
+    List<UsuarioDTO> usuarios = null;
+    if (ViewBag.Usuarios != null)
+    {
+        usuarios = ViewBag.Usuarios as List<UsuarioDTO>;
+    }
+}
+
+<h2>Resetear contraseña de usuario</h2>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+
+@if (ViewBag.Mensaje != null)
+{
+    <div class="alert alert-success">@ViewBag.Mensaje</div>
+}
+
+@if (ViewBag.ErrorUsuarios != null)
+{
+    <div class="alert alert-warning">@ViewBag.ErrorUsuarios</div>
+}
+
+<form asp-action="ResetPass" method="post" class="mt-3">
+    <div class="mb-3">
+        <label class="form-label">Usuario</label>
+        <select name="id" class="form-select">
+            @if (usuarios != null)
+            {
+                foreach (UsuarioDTO u in usuarios)
+                {
+                    <option value="@u.Id">
+                        @u.Nombre @u.Apellido (@u.Mail)
+                    </option>
+                }
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Resetear contraseña</button>
+</form>

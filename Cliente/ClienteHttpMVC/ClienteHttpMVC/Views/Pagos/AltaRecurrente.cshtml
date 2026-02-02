@@ -1,0 +1,63 @@
+﻿@using ClienteHttpMVC.DTOs
+@model PagoDTO
+
+@{
+    ViewData["Title"] = "Alta pago recurrente";
+    var listaGastos = ViewBag.Gastos as List<GastoDTO>;
+}
+
+<h2>Alta pago recurrente</h2>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+@if (ViewBag.Mensaje != null)
+{
+    <div class="alert alert-success">@ViewBag.Mensaje</div>
+}
+
+<form asp-action="AltaRecurrente" method="post">
+    <div class="mb-3">
+        <label class="form-label">Gasto</label>
+        <select asp-for="idGasto" class="form-select">
+            @if (listaGastos != null)
+            {
+                foreach (GastoDTO g in listaGastos)
+                {
+                    <option value="@g.Id">@g.Nombre</option>
+                }
+            }
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Descripción</label>
+        <input asp-for="Descripcion" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Monto</label>
+        <input asp-for="Monto" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Método de pago</label>
+        <select asp-for="MetodoPago" class="form-select">
+            <option value="0">Credito</option>
+            <option value="1">Efectivo</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Fecha inicio</label>
+        <input asp-for="FechaInicio" type="date" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Fecha fin</label>
+        <input asp-for="FechaFin" type="date" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
